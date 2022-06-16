@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户个人中心</title>
+    <link rel="stylesheet" href="../css/manager_center.css">
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <div class="tt"><a href="./login_after.html">主页</a></div>
+            <div class="tt">借书</div>
+            <div class="tt">还书</div>
+            <div class="tt">续借</div>
+            <div class="tt">用户反馈</div>
+            <div class="tt" id="user_center">个人中心</div>
+        </header>
+        <div class="container">
+            <!-- 基本信息 -->
+            <div class="esstionel_inf">
+                <div class="avater"></div>
+                <div>
+                    <h2 id="user_name">拜倒牛人小组offical</h2>
+                    <ul class="user_inf">
+                        <li>借阅卡号:&nbsp;<span id="user_id">2022017724654</span></li>
+                        <li>手机号:&nbsp;&nbsp;<span id="user_tel">18356528223</span></li>
+                    </ul>
+                </div>
+                <button class="submit">修改信息</button>
+            </div>
+            <!-- 借阅信息 -->
+            <div class="borrow_inf">
+                <div class="b_item">
+                    <div class="hd">
+                        <span>正在借阅</span>
+                        <div>
+                            <span>全部</span>
+                            <span style="color:#797979">&gt;</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="record">
+                            <span>《Android应用开发实战》李宁著，机械工业出版社</span>
+                            <span>2022.04.24</span>
+                        </div>
+                        <div class="record">
+                            <span>《人工智能》涂序彦著，科学出版社</span>
+                            <span>2022.04.25</span>
+                        </div>
+                        <div class="record">
+                            <span>《雪国》川端康城著，南海出版公司</span>
+                            <span>2022.04.25</span>
+                        </div>
+                        <div class="record">
+                            <span>《软件工程概论》郑人杰编著，机械工业出版社</span>
+                            <span>2022.05.01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b_item">
+                    <div class="hd">
+                        <span>超期图书</span>
+                        <div>
+                            <span>全部</span>
+                            <span style="color:#797979">&gt;</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="record">
+                            <span style="color: #adadad;">无超期图书</span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b_item">
+                    <div class="hd">
+                        <span>违规记录</span>
+                        <div>
+                            <span>全部</span>
+                            <span style="color:#797979">&gt;</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="record">
+                            <span>图书超期<button class="handle">处理</button></span>
+                            <span>2022.04.24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b_item">
+                    <div class="hd">
+                        <span>归还记录</span>
+                        <div>
+                            <span>全部</span>
+                            <span style="color:#797979">&gt;</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="record">
+                            <span>《鸟哥的Linux私房菜》鸟哥著，机械工业出版社</span>
+                            <span>2022.04.21</span>
+                        </div>
+                        <div class="record">
+                            <span>《计算机图形学基础教程(第2版)》孙家广、胡事民著，清华大学出版社</span>
+                            <span>2022.04.21</span>
+                        </div>
+                        <div class="record">
+                            <span>《软件工程导论（第六版）》张海藩、牟永敏著，清华大学出版社</span>
+                            <span>2022.04.20</span>
+                        </div>
+                        <div class="record">
+                            <span>《且听风吟》村上春树著，上海译文出版社</span>
+                            <span>2022.04.14</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/userInf.js"></script>
+        <script src="../js/changePhoto.js"></script>
+</body>
+
+</html>

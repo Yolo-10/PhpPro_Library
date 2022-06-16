@@ -1,0 +1,108 @@
+body {
+    background-image: url("../images/首页-登录.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+/* .bg>img {
+    width: 100%;
+    z-index: -1;
+} */
+
+
+.title {
+    display: flex;
+    width: 30%;
+    padding-left: 40%;
+    padding-top: 14%;
+}
+
+.title>div+div {
+    margin-left: 30%;
+}
+
+.t-lt {
+    width: 80px;
+    height: 52px;
+    font-size: 30px;
+    font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+    font-weight: 400;
+    color: #FFC477;
+    line-height: 0px;
+}
+
+.t-rt {
+    display: relative;
+    width: 80px;
+    height: 52px;
+    font-size: 30px;
+    font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+    font-weight: 400;
+    line-height: 0px;
+}
+.t-rt>a{
+    color: rgb(198, 197, 197);
+}
+
+
+.m-index {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 6px 400px;
+    /* text-align: center; */
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    color: #49afd0;
+}
+#radio2{
+    margin-left: 72px;
+}
+.radio {
+    margin-left: 0;
+}
+
+.m-index>div+div {
+    margin-top: 15px;
+}
+
+.m-index div {
+    display: inline-block;
+}
+
+.inputbox {
+    width: 270px;
+    height: 45px;
+    /* outline: none; */
+}
+
+.m-submit{
+    text-align: center;
+}
+
+.m-submit>input {
+    width: 130px;
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+    background-color: #49afd0;
+    color: white;
+    font-size: 20px;
+    /*margin-left: 40px;*/
+}
+
+
+.m-submit>input:hover {
+    background-color: #3892d7;
+}
+
+#reset{
+    background-color: #ff6969;
+    margin-left:85px;
+}

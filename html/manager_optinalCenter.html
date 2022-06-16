@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员操作中心</title>
+    <link rel="stylesheet" href="../css/manager_center.css">
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</head>
+
+<body>
+    <div class="bgcolor"></div>
+    <div class="box">
+        <header>
+            <a href="./login_after.html">首页</a>
+            <a href="./managerCenter.html">个人中心</a>
+        </header>
+        <div class="container">
+            <aside class="nav">
+                <ul>
+                    <li class="first first_active">图书信息管理</li>
+                    <div class="second_nav" style="display: block;">
+                        <li class="second second_active" data-id="addBook">添加图书信息</a></li>
+                        <li class="second" data-id="editBook">编辑、删除图书信息</a></li>
+                    </div>
+                    <li class="first">违规记录管理</li>
+                    <div class="second_nav">
+                        <!-- <li class="second">添加违规记录</li> -->
+                        <li class="second" data-id="editViolation">编辑、删除违规记录</li>
+                    </div>
+                    <li class="first">公告管理</li>
+                    <div class="second_nav">
+                        <li class="second" data-id="announcement">发布公告</li>
+                        <li class="second" data-id="editAnnouncement">编辑、删除公告</li>
+                    </div>
+                    <li class="first">用户反馈管理</li>
+                    <div class="second_nav">
+                        <li class="second" data-id="feedback">查看、回复用户反馈</li>
+                    </div>
+                </ul>
+            </aside>
+            <div class="content" id="content"></div>
+        </div>
+        <script src="../js/manager_optinalCenter.js"></script>
+        <script src="../js/xlsx.full.min.js"></script>
+        <script src="../js/addBook.js" type="module"></script>
+</body>
+
+</html>

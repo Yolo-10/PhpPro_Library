@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑、删除图书信息</title>
+    <link rel="stylesheet" href="../css/manager_center.css">
+</head>
+
+<body>
+    <div id="editBook">
+        <button class="danger_del" style="margin: 5px 5px 5px 772px;">删除信息</button>
+        <form action="" style="margin-left: 0px;">
+            <div class="item">
+                <span>条码号</span>
+                <input type="text" placeholder="请输入条码号" style="width: 160px;margin-right:10px;" id="book_id" />
+                <span>索书号</span>
+                <input type="text" placeholder="请输入索书号" style="width: 160px;" id="search_id" />
+            </div>
+            <div class="bookLimit" style="display: none">
+                <img src="../images/no.png" alt="">
+                <span>该图书不存在</span>
+            </div>
+            <div class="item">
+                <span>ISBN</span>
+                <input type="text" placeholder="请输入ISBN编码" id="ISBN" /></div>
+            <div class="item">
+                <span>作者</span>
+                <input type="text" placeholder="请输入作者名" id="author" /></div>
+            <div class="item">
+                <span>书名</span>
+                <input type="text" placeholder="请输入书名" id="book_name">
+            </div>
+            <div class="item">
+                <span>出版社</span>
+                <input type="text" placeholder="请输入出版社名" id="publisher" />
+            </div>
+            <div class="item">
+                <span>出版日期</span> <script src="../js/common.js"></script>
+                <input type="date" placeholder="请选择" style="width: 170px;" autocomplete="off" id="publish_time" />
+                <span>入库日期</span>
+                <input type="date" placeholder="请选择" style="width: 170px;margin-left:5px;" autocomplete="off"
+                    id="storage_time" />
+            </div>
+            <div class="item">
+                <span>馆藏地点</span>
+                <input type="text" placeholder="请输入馆藏地点" id="storage_place" />
+            </div>
+            <button class="submit" style="margin: 20px;">修改</button>
+        </form>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+   
+    <script src="../js/editBook.js"></script>
+</body>
+
+</html>

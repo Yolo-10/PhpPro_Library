@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详细信息</title>
+    <link href="../css/common.css" rel=stylesheet>
+    <link href="../css/bookinfo.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="../images/nav.png" alt="">
+    </div>
+    <nav>
+        <div class="tt"><a href="../index.html">首页</a></div>
+        <div class="tt">
+            <input type="text" name="text" id="searchbook" class="inputbox">
+        </div>
+        <div>
+            <input type="button" value="搜索" class="inputbox" id="before_search" placeholder="搜索书名、作者等">
+        </div>
+        <div class="tt">借书</div>
+        <div class="tt">还书</div>
+        <div class="tt">续借</div>
+        <div class="tt">用户反馈</div>
+        <div class="tt" class="loginBtn"><a href="./sign.html">登录</a></div>
+    </nav>
+
+
+    <div class="container">
+        <!-- 图书详情 -->
+        <div class="detail">
+            <div class="pic">
+                <a href=""><img src="../images/none.jpg" class="book_img"></a>
+            </div>
+            <div class="content">
+                <div class="book_name">软件工程实践教程</div>
+                <div class="info_item">
+                    <div class="info_key">作者：</div>
+                    <div class="info_value book_author">刘冰</div>
+                    <div class="info_key">ISBN：</div>
+                    <div class="info_value book_ISBN">I-DASS-DADA</div>
+                </div>
+                <div class="info_item">
+                    <div class="info_key">出版日期：</div>
+                    <div class="info_value book_pubDate">2009-12-12</div>
+                    <div class="info_key">出版社：</div>
+                    <div class="info_value book_publisher">机械工业出版社</div>
+                </div>
+                <div class="info_item">
+                    <div class="info_key">索书号：</div>
+                    <div class="info_value search_id">12213132176</div>
+                    <div class="info_key">入库日期：</div>
+                    <div class="info_value storage_time">2022-4-21</div>
+                </div>
+            </div>
+
+            <div class="stock">
+
+            </div>
+        </div>
+
+        <div class="stock_hd">馆藏信息</div>
+        <table>
+            <thead>
+                <th>序号</th>
+                <th>索书号</th>
+                <th>条码号</th>
+                <th>所在馆藏地点</th>
+                <th>书刊状态</th>
+            </thead>
+            <tbody id="book_td">
+                <tr id="tr_modern" style="display: none;">
+                    <td class="tr_num"></td>
+                    <td class="tr_searchId"></td>
+                    <td class="tr_bookId"></td>
+                    <td class="tr_place"></td>
+                    <td class="can tr_isborrow"></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- <script src="../js/searchBook.js"></script> -->
+    <script src="../js/bookinfo.js"></script>
+</body>
+
+</html>

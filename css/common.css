@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.tt>a{
+    color: #fff;
+}
+.inputbox {
+    width: 320px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    opacity: 0.75;
+    border: 1px solid #707070;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.td-left {
+    width: 130px;
+    height: 50px;
+    text-align: left;
+}
+
+.td-right {
+    padding-left: 0;
+    text-align: right;
+}
+
+input:checked+label {
+    color: #49afd0;
+}
+
+.radio input {
+    background-color: #49afd0;
+}
+
+#user_center>a{
+    color: #FFFFFF;
+}
+.bk-btn {
+    background-color: #49afd0;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    /* position: absolute;
+    
+    
+    */
+    margin-top: 48px;
+    margin-left: 23px;
+}
+li{
+    list-style: none;
+}
+
+#img-bg{
+    height: 626.36px;
+    width: 1223.57px;
+    /* width: 100%;
+    height: 100%; */
+    position: fixed;
+    z-index: -1;
+    
+}
+
+.img-btn input{
+    background-color: #49afd0;
+    font-size: 18px;
+    position: absolute;
+}
+
+.btn-top{
+    /* visibility: hidden; */
+    opacity: 0;
+}
+.mainBtn{
+    top: 22px;
+    left: 36px;
+}
+.borrowBookBtn{
+    top: 22px;
+    right: 435px;
+}
+.returnBookBtn{
+    top: 22px;
+    right: 358px;
+}
+.renewBtn{
+    top: 22px;
+    right: 281px;
+}
+.adviceBtn{
+        top: 22px;
+        right: 167px;
+}
+.userCenterBtn{
+    top: 22px;
+    right: 52px;
+}
+
+.returnBtn{
+    display: block;
+    top: 104px;
+    left: 35px;
+    width: 88px;
+}
+
+.btnBookNum{
+    position: absolute;
+    top: 255px;
+}
+
+.btnBookNum>input{
+    position: relative;
+    left: 310px;
+    background-color: #D5D5D5;
+    color: #FFFFFF;
+    border: none;
+    margin: 0 12px;
+    padding: 11px 32px;
+    border-radius: 30px;
+}
+
+.scanBookBtn,.scanBookBtn2{
+    top: 386px;
+    left: 554px;
+    padding: 7px 20px;
+    opacity: 0;
+}
+
+.agreeToBorrow,.agreeToReturn{
+    top: 499px;
+    left: 554px;
+    padding: 7px 20px;
+    opacity: 0;
+}
+.agree{
+    top: 428px;
+    left: 472px;
+    width: 121px;
+    height: 47px;
+    opacity: 0;
+}
+.momey{
+    top: 428px;
+    left: 631px;
+    width: 121px;
+    height: 47px;
+    opacity: 0;
+}
+
+.input{
+    position: absolute;
+    top: 153px;
+    left: 360px;
+}
+.input>input,textarea{
+    display: block;
+    margin: 24px 0;
+    border-radius: 50px;
+}
+#adviceTitle{
+    height: 32px;
+    width: 589px;
+    border: 1px solid #000;
+    text-indent:1em;
+}
+
+#adviceTime{
+    height: 31px;
+    width: 150px;
+    text-align: center;
+    margin-top: 41px;
+    border: 1px solid #000;
+}
+#adviceInf{
+    border-radius:25px;
+    text-indent:1em;
+    padding-top: 5px;
+}
+.submitAdvice{
+    top: 494px;
+    left: 536px;
+    height: 44px;
+    width: 150px;
+    opacity: 0;
+}
+.renewInf{
+    position: absolute;
+    top: 208px;
+    left: 202px;
+    font-size: 20px;
+    display: flex;
+}
+.books>div{
+    margin: 10px 0;
+    padding: 14px;
+    border: 1px solid #444444;
+    border-radius: 20px;
+}
+.choose{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.choose>img{
+    display: block;
+    margin-bottom: 36px;
+    display: none;
+}
+
+.agreeToRenew{
+    top: 497px;
+    left: 551px;
+    width: 122px;
+    height: 45px;
+    opacity: 0;
+}
+
+

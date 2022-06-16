@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑、删除公告</title>
+    <link rel="stylesheet" href="../css/manager_optionalCenter.css">
+</head>
+
+<body>
+    <div style="width:1005px;height:570px">
+        <!-- <img src="../images/editAnnouncement.png" style="width: 100%;height: 100%;"> -->
+        <div class="f_head"> 筛选:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            反馈日期&nbsp; <input type="date"> &nbsp;&nbsp;至&nbsp;&nbsp;<input type="date"></div>
+        <hr>
+
+        <div class="feedback_list">
+            <div class="feedback_item no_bottom" id="ann_item">
+                <div class="f_cnt">【阅读】《阅聆·R&L》2022年第五期：麦秸作品选</div>
+                <div class="f_date">2022.05.07</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete" id="delete_ann">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">【阅读】“书说浙里 共读共富”讲书大赛邀您来荐读</div>
+                <div class="f_date">2022.05.01</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">【通知】杭州图书馆关于全面恢复开放的通告</div>
+                <div class="f_date">2022.04.30</div>
+                <button class="btn_edit" id="edit_ann">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">【通知】杭州图书馆2022年劳动节开放时间通告</div>
+                <div class="f_date">2022.04.30</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">【通知】图书馆服务指南</div>
+                <div class="f_date">2022.03.23</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">【资源】Grammarly英文写作实时润色工具</div>
+                <div class="f_date">2022.03.13</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#delete_ann").click(function () {
+            confirm('确认删除吗？');
+
+            $("#ann_item").css({
+                "display": "none"
+            });
+        });
+
+
+        $("#edit_ann").click(function () {
+            $("#content").load('editAnn.html');
+        });
+    </script>
+</body>
+
+</html>

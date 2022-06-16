@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link href="../css/common.css" rel=stylesheet>
+    <link href="../css/register.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="bg">
+        <!-- <img src="../images/首页-登录.png"> -->
+        <div class="title">
+            <div class="t-lt"><a href="sign.html">登录</a></div>
+            <div class="t-rt">注册</div>
+        </div>
+    </div>
+    <!-- <form method="post" action="../php/managerRegister.php"> -->
+    <div class="m-index">
+        <div class="radio line">
+            <div class="td-left">
+                选择身份
+            </div>
+            <input type="radio" name="r_type" id="radio1" value="readers"><i></i><label for="radio1">读者</label>
+            <input type="radio" name="r_type" id="radio2" value="mamgaers"><i></i><label for="radio2">管理员</label>
+        </div>
+        <div class="m-input line">
+            <div class="td-left">
+                姓名
+            </div>
+            <div class="td-right">
+                <input type="text" name="r_name" placeholder="请输入真实姓名" class="inputbox" id="input_name">
+                <img src="../images/yes.png" class="logo" id="logo_name">
+            </div>
+        </div>
+        <div class="m-pass line">
+            <div class="td-left">
+                密码
+            </div>
+            <div class="td-right">
+                <input type="password" name="r_password1" placeholder="请输入密码" class="inputbox" id="psw1">
+                <img src="../images/yes.png" alt="" class="logo" id="logo_psw1">
+            </div>
+            <div class="pss pswLimit" style="display: none">
+                <img src="../images/no.png" alt="">
+                <span id="pswDifferent">密码不少于6位</span>
+            </div>
+        </div>
+        <div class="m-pass line">
+            <div class="td-left">
+                确认密码
+            </div>
+            <div class="td-right">
+                <input type="password" name="r_password2" placeholder="请再次输入密码" class="inputbox" id="psw2">
+                <img src="../images/yes.png" class="logo" id="logo_psw2">
+            </div>
+        </div>
+        <div class="pss psw_diff" style="display: none">
+            <img src="../images/no.png" alt="">
+            <span id="pswDifferent">两次输入的密码不一致</span>
+        </div>
+        <div>
+            <div class="td-left line">
+                手机号
+            </div>
+            <div class="td-right line">
+                <input type="tel" name="r_tel" placeholder="请输入手机号" class="inputbox" id="input_phone">
+                <img src="../images/yes.png" class="logo" id="logo_phone">
+            </div>
+            <div class="pss phone_limit" style="display: none">
+                <img src="../images/no.png" alt="">
+                <span id="pswDifferent">请输入正确手机号</span>
+            </div>
+        </div>
+        <div class="m-pa line">
+            <div class="td-left">
+                验证码
+            </div>
+            <div class="td-right">
+                <input type="text" name="r_id" placeholder="请输入验证码" class="inputbox" id="input_id">
+                <img src="../images/yes.png" class="logo" id="logo_id">
+                <img src="../images/验证码.png" id="s-pic">
+            </div>
+        </div>
+        <!-- <div class="m-pa">
+            <div class="td-left">
+                验证码
+            </div>
+            <div class="td-right">
+                <input type="password" name="password" placeholder="请输入验证码" class="inputbox">
+                <input type="button" value="发送验证码" class="m-submit" id="s-sub">
+            </div>
+        </div> -->
+
+        <div class="m-submit line">
+            <input type="submit" value="注册" id="submit" name="r_sub">
+            <input type="submit" value="重置" id="reset" name="r_sub">
+        </div>
+
+
+    </div>
+    <!-- </form> -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

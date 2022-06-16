@@ -1,0 +1,54 @@
+.f_head{
+    margin: 20px;
+    margin-top: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.f_head>input {
+    width: 125px;
+    border: 1px solid #c6c6c6;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.feedback_list{
+    display: flex;
+    flex-direction: column;
+    margin:50px 100px 0;
+}
+
+.feedback_item{
+    display: flex;
+    height: 30px;
+    margin: 5px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.f_cnt{
+    flex: 1;
+}
+
+.f_date{
+    color: #a0a0a0;
+    margin: 0 20px;
+}
+
+.return {
+    width: 65px;
+    color: #fff;
+    background-color: #49afd0;
+    border: none;
+    border-radius: 15px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+.finished{
+    width: 65px;
+    color: #49afd0;
+    border: 1px solid #49afd0;
+    border-radius: 15px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}

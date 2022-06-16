@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查看、回复违规记录</title>
+    <link rel="stylesheet" href="../css/manager_optionalCenter.css">
+</head>
+
+<body>
+    <!-- <div style="width:1005px;height:570px">
+        <img src="../images/editViolation.png" style="width: 100%;height: 100%;">
+    </div> -->
+
+    <div style="width:1005px;height:570px">
+        <div class="f_head">
+            <input value="" placeholder="请输入借阅卡号查询" style="width: 300px;" />
+            <button class="btn_edit" id="btn_vio">查询</button>
+            <br> <br>
+            用户名：&nbsp;<span id="user_name" style="display: none;">拜倒牛人小组official</span>
+            <hr>
+        </div>
+        <div class="feedback_list" id="vio_res" style="display: none;">
+            <div class="feedback_item no_bottom">
+                <div class="f_cnt">图书破损</div>
+                <div class="f_date">2022.05.07</div>
+                <button class="btn_edit" id="edit_vio">编辑</button>
+                <button class="btn_delete">删除</button>
+            </div>
+
+            <div class="feedback_item no_bottom" id="vio_item">
+                <div class="f_cnt">图书破损</div>
+                <div class="f_date">2022.03.07</div>
+                <button class="btn_edit">编辑</button>
+                <button class="btn_delete" id="delete_vio">删除</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#btn_vio").click(function () {
+            $("#user_name").css({
+                "display": "inline"
+            });
+            $("#vio_res").css({
+                "display": "block"
+            });
+        })
+
+
+        $("#edit_vio").click(function () {
+            $("#content").load('editAnn.html');
+        });
+
+        $("#delete_vio").click(function () {
+            confirm('确认删除吗？');
+            // 删除操作
+
+            $("#vio_item").css({
+                "display": "none"
+            });
+        });
+    </script>
+</body>
+
+</html>

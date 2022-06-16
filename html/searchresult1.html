@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询结果</title>
+    <link href="../css/common.css" rel=stylesheet>
+    <link href="../css/searchresult.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="../images/nav.png" alt="">
+    </div>
+    <nav>
+        <div class="tt"><a href="./login_after.html">首页</a></div>
+        <div class="tt">
+            <input type="text" name="text" id="searchbook" class="inputbox" placeholder="搜索书名、作者等">
+        </div>
+        <div>
+            <input type="button" value="搜索" class="inputbox" id="after_search">
+        </div>
+        <div class="tt">借书</div>
+        <div class="tt">还书</div>
+        <div class="tt">续借</div>
+        <div class="tt">用户反馈</div>
+        <div class="tt" id="user_center">个人中心</div>
+    </nav>
+
+    <!-- 搜索列表 -->
+    <div class="search_list" id="search_list">
+        <div class="book" style="display: none;" id="book">
+            <a href="./bookinfo.html">
+                <div class="mum"></div>
+                <div class="pic">
+                    <img src="../images/none.jpg" class="book_img">
+                </div>
+                <div class="inf">
+                    <div class="book_name"></div>
+                    <div class="book_publisher"></div>
+                    <div class="book_author"></div>
+                    <div class="book_other">
+                        <span style="color:#8a8b8a;">出版日期：</span><span class="storage_time"></span>
+                        <span style="color:#8a8b8a;margin-left: 10px;">索书号：</span><span class="search_id"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="bottom"></div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- <script src="../js/searchBook.js"></script> -->
+    <script src="../js/searchResult.js"></script>
+</body>
+
+</html>

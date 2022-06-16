@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/首页-注册.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    /* background-size: 100% 100% ; */
+    background-attachment: fixed;
+}
+
+
+
+.title {
+    display: flex;
+    width: 30%;
+    padding-left: 41%;
+    padding-top: 6%;
+}
+
+.title>div+div {
+    margin-left: 30%;
+}
+
+.t-rt {
+    width: 80px;
+    height: 52px;
+    font-size: 30px;
+    font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+    font-weight: 300;
+    color: #FFC477;
+    line-height: 0px;
+}
+
+.t-lt {
+    display: relative;
+    width: 80px;
+    height: 52px;
+    font-size: 30px;
+    font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+    font-weight: 300;
+    line-height: 0px;
+}
+.t-lt>a{
+    color: rgb(198, 197, 197);
+}
+
+
+.m-index {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    font-size: 20px;
+    /* margin-left: 32%; */
+    /* margin-top: 5px; */
+    text-align: left;
+    padding: 0 375px
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    color: #49afd0;
+}
+
+#radio2 {
+    margin-left:50px;
+}
+
+/* .line {
+    margin-top: 25px;
+} */
+
+.m-index div {
+    display: inline-block;
+}
+
+.inputbox {
+    width: 300px;
+    height: 45px;
+}
+
+.m-submit>input,
+#s-sub {
+    width: 130px;
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+    background-color: #49afd0;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.m-submit{
+    text-align: center;
+}
+.m-submit>input:hover,
+#s-sub:hover {
+    background-color: #3892d7;
+}
+
+.m-pa .inputbox {
+    width: 127px;
+}
+
+#s-sub {
+    width: 150px;
+    margin-left: 40px;
+}
+
+#s-pic {
+    width: 118px;
+    height: 50px;
+    margin-left: 40px;
+}
+.pss{
+    font-size: 15px;
+    color: red;
+}
+.pss>img{
+    height: 15px;
+}
+.logo{
+    height: 15px;
+    visibility: hidden;
+}
+
+#reset{
+    background-color: #ff6969;
+    margin-left:85px ;
+}

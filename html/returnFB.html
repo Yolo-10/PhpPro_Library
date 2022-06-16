@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/return.css">
+</head>
+
+<body>
+    <div class="return_box">
+        <div>
+            <div> 标题：<span style="font-size: 15px;"> 这是一条反馈</span>
+            </div>
+            <div>反馈信息：<span style="font-size: 15px;"> 图书上新较慢,这是一条测试的内容,测试测试测试测试测试测试测试测试测试测试</div>
+            </span>
+            <div>
+                回复内容：
+                <div>
+                    <textarea name="" id="" cols="80" rows="10" placeholder="请输入回复信息" style="outline: none;"></textarea>
+                </div>
+            </div>
+            <div>
+                回复日期：
+                <input type="date" name="" id="">
+            </div>
+        </div>
+        <button class="submit" id="checkReturn">确认回复</button>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#checkReturn").click(function (e) {
+            if ($("textArea").val().length === 0) {
+                alert("输入不能为空");
+            } else {
+                alert("回复成功");
+                $("textArea").val('');
+            }
+        });
+    </script>
+</body>
+
+</html>

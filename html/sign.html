@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link href="../css/common.css" rel=stylesheet>
+    <link href="../css/sign.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="bg">
+        <!-- <img src="../images/首页-登录.png"> -->
+        <div class="title">
+            <div class="t-lt">登录</div>
+            <div class="t-rt"><a href="./register.html">注册</a></div>
+        </div>
+    </div>
+    <div class="m-index">
+        <div class="radio">
+            <div class="td-left">
+                选择身份
+            </div>
+            <input type="radio" name="status" id="radio1"><i></i><label for="radio1">读者</label>
+            <input type="radio" name="status" id="radio2"><i></i><label for="radio2">管理员</label>
+        </div>
+        <div class="m-input">
+            <div class="td-left">
+                用户名
+            </div>
+            <div class="td-right">
+                <input type="text" name="name" placeholder="请输入借阅卡号/手机号" class="inputbox" id="user_id">
+            </div>
+        </div>
+        <div class="m-pass">
+            <div class="td-left">
+                密码
+            </div>
+            <div class="td-right">
+                <input type="password" name="password" placeholder="请输入密码" class="inputbox" id="user_pwd">
+            </div>
+        </div>
+        <div class="m-submit">
+            <input type="submit" value="登录" id="login">
+            <input type="submit" value="重置" id="reset" name="r_sub">
+        </div>
+
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+     <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
